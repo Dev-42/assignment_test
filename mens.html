@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Men's Products</title>
+  <style>
+    .card {
+      
+      padding: 10px;
+      width: 300px;
+      display: inline-block;
+      margin: 10px;
+    }
+    .card img {
+      width: 100%;
+      width: 300px;
+      object-fit: cover;
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+    .card p {
+      margin: 0;
+    }
+    .card .price {
+      font-weight: bold;
+    }
+    .card .strikedoffprice {
+      text-decoration: line-through;
+    }
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button><a href="C:\Users\Lenovo\OneDrive\Desktop\test\test\repo\muskan_pw11_244\unit-4\sprint-4\day-3\PRODUCT_PAGE\women.html"></a> WOMEN</button>
+  <div id="mens-products"></div>
+ 
+</body>
+
+</html>
+<script>
+    var mensData = [
+  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  },  {
+    image_url:
+      "https://i02.appmifile.com/417_operator_in/17/08/2022/0d6e11e0b3d93f29d2877c77b28d9102!800x800!85.jpg",
+    name: "MEN'S REEBOK DYNAMIC ZIGZAG SHOES",
+    price: 7599,
+    strikedoffprice: 9999,
+  },
+  {
+    image_url:
+      "https://images.meesho.com/images/products/11873636/e692b_256.webp",
+    name: "MEN'S REEBOK SWIM SUPERSOFT FLIP SLIPPERS",
+    price: 909,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://4.imimg.com/data4/TT/TT/GLADMIN-/https-content-shop4reebok-com-static-product-ae7887-men_training_polo_shirt_short_sleeve_ae7887_1-500x500.jpg",
+    name: "MEN'S REEBOK TRAINING ACTIVE BASIC POLO TEE",
+    price: 779,
+    strikedoffprice: 1299,
+  },
+  {
+    image_url:
+      "https://cdn.mall.adeptmind.ai/https%3A%2F%2Fimages.footballfanatics.com%2Ftoronto-blue-jays%2Fyouth-royal-toronto-blue-jays-platinum-logo-long-sleeve-t-shirt_pi4252000_ff_4252328-7ff2f7123a367732a4c6_full.jpg%3F_hv%3D2_medium.jpg ",
+    name: "MEN'S REEBOK TRAINING ACTIVE MOVE TEE ",
+    price: 1749,
+    strikedoffprice: 2499,
+  }
+  
+];
+
+var productsContainer = document.getElementById("mens-products");
+
+for (var i = 0; i < mensData.length; i++) {
+  // create a new row after every 4 cards
+  if (i % 4 === 0) {
+    var row = document.createElement("div");
+    row.className = "row";
+    productsContainer.appendChild(row);
+  }
+
+  var card = document.createElement("div");
+  card.className = "card";
+
+  var img = document.createElement("img");
+  img.src = mensData[i].image_url;
+  card.appendChild(img);
+
+  var h3 = document.createElement("h3");
+  h3.textContent = mensData[i].name;
+  card.appendChild(h3);
+
+  var p1 = document.createElement("p");
+  p1.className = "price";
+  p1.textContent = "Price: ₹" + mensData[i].price;
+  card.appendChild(p1);
+
+  var p2 = document.createElement("p");
+  p2.className = "strikedoffprice";
+  p2.textContent = "List Price: ₹" + mensData[i].strikedoffprice;
+  card.appendChild(p2);
+
+  var button = document.createElement("button");
+  button.textContent = "Add to Cart";
+  card.appendChild(button);
+
+  // add the card to the current row
+  row.appendChild(card);
+}
+
+</script>
